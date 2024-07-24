@@ -98,12 +98,24 @@ header:hover {
     margin-top: 15px;
     border-radius: 5px;
     background-color: red;
+    animation: fadeDown 0.5s ease-out forwards;
 }
 .hide {
     display: none;
 }
 #winner {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 600px) {
