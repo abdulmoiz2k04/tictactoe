@@ -24,10 +24,10 @@ header:hover {
     padding: 20px;
 }
 .right {
-    width: 70%;
+    width: 30%;
 }
 .left {
-    width: 30%;
+    width: 70%;
 }
 .infobox {
     padding: 30px;
@@ -118,8 +118,15 @@ header:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width:83%;
+        margin-top: 20px;
     }
 }
