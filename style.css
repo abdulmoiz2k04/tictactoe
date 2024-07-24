@@ -71,7 +71,7 @@ header:hover {
 .resetbtn {
     display: flex;
     justify-content: center;
-    align-items: ;
+    align-items: center;
     gap : 10px;
     flex-wrap: wrap;
 }
