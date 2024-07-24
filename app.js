@@ -43,11 +43,13 @@ boxes.forEach((box)=>{
             box.innerText = "O";
             turnO = false;
             box.style.color = "green";
+            box.style.textShadow = "0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00";
             clicks++;
         }else{
             box.innerText = "X";
             turnO = true;
             box.style.color = "purple";
+            box.style.textShadow = "0 0 5px #fff, 0 0 10px #fff, 0 0 15px #800080, 0 0 20px #800080, 0 0 25px #800080, 0 0 30px #800080, 0 0 35px #800080";
             clicks++;
         }
         box.disabled = true;
