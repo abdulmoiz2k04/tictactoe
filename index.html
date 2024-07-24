@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <header>
+        <h1>TIC-TAC-TOE GAME</h1>
+        <p>Spark Your Intelligence</p>
+    </header>
+    <div class="winner_msg hide">
+        <h3 id="winner"></h3>
+    </div>
+    <div class="row">
+        <div class="infobox left">
+            <h2>PLAYER NAMES</h2>
+            <p>Player 1: <span id="p1name"></span></p>
+            <p>Player 2: <span id="p2name"></span></p>
+            <h2>SCORE</h2>
+            <p>Player O: <span id="p1score"></span></p>
+            <p>Player X: <span id="p2score"></span></p>
+            <div class="resetbtn">
+                <button class="btn" id="reset">New Game</button>
+                <button class="btn" id="mode">Light Mode</button>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="game">
+                <button class="box" id="b1"></button>
+                <button class="box" id="b2"></button>
+                <button class="box" id="b3"></button>
+                <button class="box" id="b4"></button>
+                <button class="box" id="b5"></button>
+                <button class="box" id="b6"></button>
+                <button class="box" id="b7"></button>
+                <button class="box" id="b8"></button>
+                <button class="box" id="b9"></button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
