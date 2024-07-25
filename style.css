@@ -60,7 +60,7 @@ header:hover {
     color:green;
     background-color: transparent;
     border: none;
-    font-size: 6vmin;
+    font-size: 10vmin;
 }
 #b1, #b2, #b3, #b4, #b5, #b6 {
     border-bottom: 5px solid red;
