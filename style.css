@@ -129,4 +129,8 @@ header:hover {
         width:83%;
         margin-top: 20px;
     }
+    .winner_msg {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
 }
