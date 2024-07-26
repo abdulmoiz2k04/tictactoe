@@ -54,12 +54,16 @@ boxes.forEach((box)=>{
         }
         box.disabled = true;
         check_winner();
-        if(clicks===9){
-            winner.innerText = `GAME DRAW!`;
-            winner_msg.classList.remove("hide");
-        }
+        game_draw();
     })
 })
+// game draw
+const game_draw = () => {
+    if(clicks===9){
+        winner.innerText = `GAME DRAW!`;
+        winner_msg.classList.remove("hide");
+    }
+}
 // winner checker
 const check_winner = () =>{
     for (let pattern of win_patterns){
@@ -121,6 +125,7 @@ const new_game =()=>{
     turnO = true;
     winner_msg.classList.add("hide");
     enable_box();
+    clicks = 0;
 }
 reset = document.querySelector("#reset");
 reset.addEventListener("click", new_game);
